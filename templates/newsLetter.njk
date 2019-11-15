@@ -1,0 +1,44 @@
+{% extends "base.njk" %}
+
+{% block metaStuff %}
+<title>Newsletter</title>
+{% endblock %}
+
+{% block main %}
+<h1>Minecraft Tours Newsletter!</h1>
+<h2>Signup for our Newsletter</h2>
+
+<form action="newsSignup" method="GET">
+	<fieldset class="user_info">
+		<legend>About You</legend>
+		
+		<section class="container">
+		<label>
+			First Name:
+			<input type="text", id="first_name", name="firstName", value="">
+		</label>
+		<label>
+			Last Name:
+			<input type="text", id="last_name", name="lastName", value="">
+		</label>
+		<label>
+			Email:
+			<input type="text", id="email", name="email", value="">
+		</label>
+		<label>
+			How did you hear about us?:
+			<select name="howHear">
+					<option value="tv">Television</option>
+					<option value="ad">Internet Ad</option>
+					<option value="friend">A friend</option>
+					<option value="email">Email</option>
+					<option value="email">Word of mouth</option>
+					<option value="email">Radio</option>
+					<option value="email">Social media</option>
+			</select>
+		</label>
+		<button type="submit">Submit</button>
+		</section>
+	</fieldset>
+</form>
+{% endblock %}

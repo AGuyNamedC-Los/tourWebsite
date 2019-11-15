@@ -1,0 +1,115 @@
+body {
+	background: #50B5E5;
+	margin: 9em;
+}
+
+nav {
+	background: #12FEA8;
+	width: 20em;
+	border: solid black;
+	border-width: thick;
+	padding-right: 3em;
+	margin-bottom: 2em;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+	padding-right: 40px;
+}
+
+nav li {
+	border-style: solid;
+	text-align: center;
+	cursor: pointer;
+}
+
+nav li:hover {
+	background: white;
+}
+
+
+main {
+	background: #BDBFC1;
+	border: solid black;
+	border-width: thick;
+	padding-left: 9em;
+	padding-right: 9em;
+	padding-bottom: 500-px;
+}
+
+h1 {
+	font-size: 3em;
+	text-align: center; 
+	font-family: Luminari, fantasy;
+}
+
+h2, h3, h4 {
+	font-size: 2em;
+	text-align: right;
+	font-style: italic;
+}
+
+figure {
+	clear: both;
+}
+
+img {
+	max-width: 500px;
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+li {
+	font-size: 1.5em;
+}
+
+figcaption {
+	clear: both;
+}
+
+/* css for newsLetter form*/
+.user_info {
+	background-color: #12FEA8;
+	border-style: solid;
+	border-width: 7px;
+	border-color: black;
+	margin-bottom: 10%;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+	text-align: right;
+	padding-right: 40%;
+}
+
+legend {
+	font-size: 30px;
+}
+
+label {
+	background-color: #12FEA8;
+}
+
+input {
+	background: white;
+}
+
+button {
+  border: solid;
+  color: black;
+  padding: 10px 20px;
+  margin-left: 1000px;
+}
+
+/* end css for newsLetter form*/

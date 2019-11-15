@@ -1,0 +1,14 @@
+{% extends "base.njk" %}
+
+{% block metaStuff %}
+<title>Thanks for Signing up</title>
+{% endblock %}
+
+{% block main %}
+<h1 id="about-us">Thanks for Signing up</h1>
+<section>
+    <h2>Subscribed!</h2>
+    <p>Thanks {{firstName}} {{lastName}} you've been subscribed to our newsletter.</p>
+    <p>Also confirming that you heard about us from <em>{{howHear}}</em></p>
+</section>
+{% endblock %}

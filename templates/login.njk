@@ -1,0 +1,28 @@
+{% extends "base.njk" %}
+
+{% block metaStuff %}
+<title>Add Tours</title>
+{% endblock %}
+
+{% block main %}
+<h1>Login!</h1>
+<h2>Please enter your information</h2>
+
+<form action="loginStatus" method="POST">
+	<fieldset class="user_info">
+		<legend>Login Sheet</legend>
+		
+		<section class="container">
+		<label>
+			Email:
+			<input type="text", id="email", name="email", value="">
+		</label>
+		<label>
+			Password:
+			<input type="text", id="password", name="password", value="">
+		</label>
+		<button type="submit">Submit</button>
+		</section>
+	</fieldset>
+</form>
+{% endblock %}

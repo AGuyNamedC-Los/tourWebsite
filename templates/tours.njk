@@ -1,0 +1,17 @@
+{% extends "base.njk" %}
+
+{% block metaStuff %}
+<title>Current Tours</title>
+{% endblock %}
+
+{% block main %}
+<h1 id="tours">Tours</h1>
+<section>
+    <h2 id="minecraft_tours">Minecraft Tours</h2>
+    <ol>
+        {%for tour in tours %}
+            <li>{{tour.name}} ({{tour.date}})</li>
+        {% endfor %}
+    </ol>
+</section>
+{% endblock %}

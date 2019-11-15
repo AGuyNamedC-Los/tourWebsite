@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {% block metaStuff %}
+            <title>Minecraft Tours</title>
+        {% endblock %}
+        <link href="tour.css" rel="stylesheet">
+    </head>
+    <body>
+    <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About the Tour</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/newsLetter">NewsLetter</a></li>
+        <li><a href="/tours">Tours</a></li>
+        <li><a href="/addTours">Add Tours</a></li>
+    </ul>
+    </nav>
+    <main>
+        {% block main %}{% endblock %}
+		{% if (user.role == "customer") or (user.role == "admin") %}
+			<footer>
+				<p>User: {{ user.firstName }} {{user.lastName}}</p>
+			</footer>
+		{% endif %}
+    </main>
+    </body>
+</html>
